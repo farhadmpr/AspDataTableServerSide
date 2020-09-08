@@ -8,4 +8,9 @@ The Core Features that come along with JQuery Datatables are searching, sorting,
 
 That said, it a highly flexible and powerful plugin.
 
-I got help from [this](https://www.codewithmukesh.com/blog/jquery-datatable-in-aspnet-core/) article and added the delete feature.
+I got help from [this](https://www.codewithmukesh.com/blog/jquery-datatable-in-aspnet-core/){:target="_blank"} article and added the delete feature.
+
+------------
+### TODO list
+
+- [ ] Create EDIT feature
