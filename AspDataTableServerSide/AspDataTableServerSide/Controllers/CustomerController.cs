@@ -60,5 +60,18 @@ namespace AspDataTableServerSide.Controllers
                 throw;
             }
         }
+
+        [HttpDelete("Delete/{id}")]
+        public IActionResult Delete(int id)
+        {
+            var customer = context.Customers.Find(id);
+            if(customer != null)
+            {
+                context.Customers.Remove(customer);
+                context.SaveChanges();
+                return Ok();
+            }
+            return NotFound();
+        }       
     }
 }
