@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using AspDataTableServerSide.Data;
 using Microsoft.AspNetCore.Builder;
@@ -57,6 +58,7 @@ namespace AspDataTableServerSide
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllers();
                 endpoints.MapRazorPages();
             });
         }
